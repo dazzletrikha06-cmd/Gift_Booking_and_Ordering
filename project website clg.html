@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gift Booking & Delivery</title>
+  <style>
+    
+      body {
+      font-family: Arial, sans-serif;
+      background-color: #fffaf3; /* soft pastel background */
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      color: brown;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      color: crimson;
+      margin-top: 15px;
+    }
+
+    p {
+      margin: 5px 0;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #ddd;
+      margin: 15px 0;
+    }
+
+    a {
+      display: inline-block;
+      padding: 8px 16px;
+      background-color: gold;
+      color: brown;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      margin-top: 8px;
+    }
+
+    a:hover {
+      background-color: #f0c400; /* darker gold on hover */
+    }
+
+    .price {
+      font-weight: bold;
+      color: green;
+    }
+
+    .total {
+      margin-top: 30px;
+      font-size: 20px;
+      font-weight: bold;
+      color: navy;
+    } 
+      body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      background: #fdfdfd;
+      }
+
+    /* Logo gift box */
+    .gift-box {
+      width: 120px;
+      height: 120px;
+      background-color: crimson;
+      position: relative;
+      margin: 40px auto 20px auto;
+      border-radius: 12px;
+    }
+    .gift-box::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 55px;
+      width: 10px;
+      height: 120px;
+      background-color: gold;
+    }
+    .gift-box::after {
+      content: "";
+      position: absolute;
+      top: 55px;
+      left: 0;
+      width: 120px;
+      height: 10px;
+      background-color: gold;
+    }
+    .gift-box {
+  width: 140px;
+  height: 140px;
+  background: linear-gradient(135deg, crimson, darkred);
+  position: relative;
+  margin: 40px auto 20px auto;
+  border-radius: 20px;
+  border: 4px solid gold;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+/* Ribbon */
+.gift-box::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 65px;
+  width: 12px; height: 140px;
+  background: gold;
+  box-shadow: inset 0 0 5px #fff;
+}
+.gift-box::after {
+  content: "";
+  position: absolute;
+  top: 65px; left: 0;
+  width: 140px; height: 12px;
+  background: gold;
+  box-shadow: inset 0 0 5px #fff;
+}
+    .bow {
+      position: absolute;
+  top: -35px;
+  left: 20px;
+  width: 100px;
+  height: 40px;
+}
+.bow::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  background: gold;
+  border-radius: 50% 50% 0 50%;
+  transform: rotate(-20deg);
+  box-shadow: inset -3px -3px 5px rgba(255,255,255,0.6);
+}
+.bow::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  background: gold;
+  border-radius: 50% 50% 50% 0;
+  transform: rotate(20deg);
+  box-shadow: inset -3px -3px 5px rgba(255,255,255,0.6);
+}
+      
+    
+    
+
+    .arc-text {
+      font-size: 22px;
+      color: brown;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+
+    .book-link {
+      display: inline-block;
+      padding: 12px 24px;
+      background: gold;
+      color: crimson;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 8px;
+      margin: 20px 0;
+    }
+
+    .gift-section {
+      margin: 40px auto;
+      max-width: 800px;
+    }
+    .gift-item {
+      margin: 20px 0;
+    }
+    .gift-item img {
+      width: 200px;
+      height: 150px;
+      background: #eee;
+      display: block;
+      margin: 0 auto 10px auto;
+    }
+    .gift-item p {
+      margin: 5px 0;
+    }
+    .gift-item .price {
+      font-weight: bold;
+      color: green;
+    }
+
+    form {
+      margin: 40px auto;
+      max-width: 400px;
+      text-align: left;
+    }
+    label {
+      font-weight: bold;
+    }
+    textarea {
+      width: 100%;
+      height: 80px;
+      margin: 10px 0;
+      resize: none;
+    }
+    input[type="submit"] {
+      display: block;
+      margin: 10px auto;
+      padding: 10px 20px;
+      background: crimson;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .total {
+      margin: 30px auto;
+      font-size: 20px;
+      font-weight: bold;
+      color: navy;
+    }
+    /* Gift box logo border */
+.gift-box {
+  border: 3px solid brown;   /* adds a border around the gift box */
+  box-shadow: 0 0 10px rgba(0,0,0,0.2); /* soft shadow */
+}
+
+
+/* Gift items container */
+.gift-section {
+  border: 2px solid #ddd;    /* light border around all gifts */
+  background-color: #fff8e7; /* soft cream background */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Each gift item */
+.gift-item {
+  border: 1px solid #ccc;    /* border around each item */
+  background-color: #fdfdfd; /* white background */
+  padding: 15px;
+  border-radius: 8px;
+}
+
+/* Address form */
+form {
+  border: 2px solid crimson;
+  background-color: #fff0f0;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Total section styled like a receipt */
+.total {
+  border: 2px dashed navy;   /* dashed border for receipt look */
+  background-color: #e6f0ff; /* light blue background */
+  padding: 15px;
+  border-radius: 8px;
+  width: fit-content;
+}
+
+  </style>
+<body>
+
+  <!-- Logo -->
+  <div class="gift-box">
+    <div class="bow"></div>
+  </div>
+  <div class="arc-text">Send Gifts and Happiness</div>
+
+  <!-- Booking link -->
+  <a href="#gifts" class="book-link">Click here to book your gift</a>
+
+  <!-- Gift options -->
+  <div id="gifts" class="gift-section">
+    <div class="gift-item">
+      <img src="chocolate.png" alt="Chocolate">
+      <p>Chocolate </p>
+      <p class="price">Amount: ₹...</p>
+      <p><a href="./chocolate_type_page.html">Click here to choose chocolates</a></p>
+    </div>
+    <div class="gift-item">
+      <img src="toys.png" alt="Toy">
+      <p> Toy</p>
+      <p class="price">Amount: ₹...</p>
+      <p><a href="./toy_type.html">Click here to add Teddy Toy</a></p>
+    </div>
+    <div class="gift-item">
+      <img src="bouquet.png" alt="bouquet">
+      <p>bouquet</p>
+      <p class="price">Amount: ₹...</p>
+      <p><a href="./bouquet_type.html">Click here to add bouquet</a></p>
+    </div>
+    <div class="gift-item">
+      <img src="bedsheet.png" alt="Bedsheet">
+      <p>Bedsheet</p>
+      <p class="price">Amount: ₹...</p>
+      <p><a href="./bedsheet_type.html">Click here to add Bedsheet</a></p>
+    </div>
+    <div class="gift-item">
+      <img src="blanket.png" alt="Blanket">
+      <p>Blanket</p>
+      <p class="price">Amount: ₹...</p>
+      <p><a href="./blanket_type.html">Click here to add Blanket</a></p>
+    </div>
+  </div>
+
+  <!-- Address form -->
+  <form>
+    <label>Delivery Address:</label><br>
+    <p>write the reciever's address</p>
+    <textarea name="address"></textarea><br>
+    <input type="submit" value="Submit Address">
+  </form>
+
+
+  <!-- Total -->
+  <div class="total">Total Amount: ....</div>
+
+</body>
+</html>
+
